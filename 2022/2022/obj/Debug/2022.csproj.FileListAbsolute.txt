@@ -1,0 +1,8 @@
+C:\Users\bolyh\Desktop\2022-01-26-fuvar\2022\2022\bin\Debug\2022.exe.config
+C:\Users\bolyh\Desktop\2022-01-26-fuvar\2022\2022\bin\Debug\2022.exe
+C:\Users\bolyh\Desktop\2022-01-26-fuvar\2022\2022\bin\Debug\2022.pdb
+C:\Users\bolyh\Desktop\2022-01-26-fuvar\2022\2022\obj\Debug\2022.csproj.AssemblyReference.cache
+C:\Users\bolyh\Desktop\2022-01-26-fuvar\2022\2022\obj\Debug\2022.csproj.SuggestedBindingRedirects.cache
+C:\Users\bolyh\Desktop\2022-01-26-fuvar\2022\2022\obj\Debug\2022.csproj.CoreCompileInputs.cache
+C:\Users\bolyh\Desktop\2022-01-26-fuvar\2022\2022\obj\Debug\2022.exe
+C:\Users\bolyh\Desktop\2022-01-26-fuvar\2022\2022\obj\Debug\2022.pdb

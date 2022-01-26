@@ -38,8 +38,22 @@ namespace _2022
             foreach (var sor in File.ReadAllLines("fuvar.csv").Skip(1))
             {
                 fuvarok.Add(new fuvar(sor));
-
+                
             }
+            Console.WriteLine($"3.feladat: {fuvarok.Count} fuvar");
+            //4.feladat:
+            int fuvartszámol = 0;
+            double pénztszámol = 0;
+            foreach (var f in fuvarok)
+            {
+                if (f.TaxiAzonosító==6185)
+                {
+                    fuvartszámol = fuvartszámol + 1;
+                    pénztszámol = pénztszámol + f.ViteldíjDollárban;
+                }
+            }
+            Console.WriteLine($"4.feladat: {fuvartszámol} fuvar alatt: {pénztszámol}$");
+            Console.ReadKey();
         }
     }
 }
