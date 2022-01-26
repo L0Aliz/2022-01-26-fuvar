@@ -53,6 +53,41 @@ namespace _2022
                 }
             }
             Console.WriteLine($"4.feladat: {fuvartszámol} fuvar alatt: {pénztszámol}$");
+            //5.feladat:
+            int készpénz = 0;
+            int bankkártya = 0;
+            int vitatott = 0;
+            int ingyenes = 0;
+            int ismeretlen = 0;
+            foreach (var u in fuvarok)
+            {
+                if (u.FizetésMódja=="készpénz")
+                {
+                    készpénz = készpénz + 1;
+                }
+                if (u.FizetésMódja=="bankkártya")
+                {
+                    bankkártya = bankkártya + 1;
+                }
+                if (u.FizetésMódja == "vitatott")
+                {
+                    vitatott = vitatott + 1;
+                }
+                if (u.FizetésMódja == "ingyenes")
+                {
+                    ingyenes = ingyenes + 1;
+                }
+                if (u.FizetésMódja == "ismeretlen")
+                {
+                    ismeretlen = ismeretlen + 1;
+                }
+            }
+            Console.WriteLine("5.feladat: ");
+            Console.WriteLine($"Készpénz: {készpénz} fuvar");
+            Console.WriteLine($"Bankkártya: {bankkártya} fuvar");
+            Console.WriteLine($"Vitatott: {vitatott} fuvar");
+            Console.WriteLine($"Ingyenes: {ingyenes} fuvar");
+            Console.WriteLine($"Ismeretlen: {ismeretlen} fuvar");
             Console.ReadKey();
         }
     }
