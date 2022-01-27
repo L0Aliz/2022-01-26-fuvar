@@ -88,6 +88,19 @@ namespace _2022
             Console.WriteLine($"Vitatott: {vitatott} fuvar");
             Console.WriteLine($"Ingyenes: {ingyenes} fuvar");
             Console.WriteLine($"Ismeretlen: {ismeretlen} fuvar");
+            //6. feladat:
+            double átszámolkmbe = 0;
+            double váltószám=1.6;
+            double összeszámol = 0;
+            foreach (var v in fuvarok)
+            {
+                if (v.TávMérföldben>0)
+                {
+                    átszámolkmbe = v.TávMérföldben * váltószám;
+                    összeszámol = összeszámol + átszámolkmbe;
+                }
+            }
+            Console.WriteLine($"6. feladat: {Math.Round(összeszámol,2)}km");
             Console.ReadKey();
         }
     }
