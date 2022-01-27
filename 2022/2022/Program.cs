@@ -101,6 +101,26 @@ namespace _2022
                 }
             }
             Console.WriteLine($"6. feladat: {Math.Round(összeszámol,2)}km");
+            //7. feladat:
+            double leghosszabb = 0.1;
+            foreach (var a in fuvarok)
+            {
+                if (a.UtazásiIdő>leghosszabb)
+                {
+                    leghosszabb = a.UtazásiIdő;
+                }
+            }
+            Console.WriteLine("7.feladat: Leghoszabb fuvar:");
+            foreach (var r in fuvarok)
+            {
+                if (r.UtazásiIdő ==leghosszabb)
+                {
+                    Console.WriteLine($"Fuvar hossza: {r.UtazásiIdő} másodperc");
+                    Console.WriteLine($"Taxi azonosító: {r.TaxiAzonosító}");
+                    Console.WriteLine($"Megtett távolság: {r.TávMérföldben * 1.6} km");
+                    Console.WriteLine($"Viteldíj: {r.ViteldíjDollárban} $");
+                }
+            }
             Console.ReadKey();
         }
     }
